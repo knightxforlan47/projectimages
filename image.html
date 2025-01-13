@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+    }
+    .large-image {
+      width: 300px;
+      height: 200px;
+      margin: 20px auto;
+      background: lightgray center / contain no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ccc;
+    }
+    .large-image span {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Photo Gallery</h1>
+  <div class="large-image">
+    <span>Hover over an image to see details</span>
+  </div>
+  <div class="gallery">
+    <img src="forrest.jpg" alt="Beautiful Landscape">
+    <img src="city.jpg" alt="City Skyline">
+    <img src="sunset.jpg" alt="Sunset at the Beach">
+  </div>
+  <script src="image.js"></script>
+</body>
+</html>
